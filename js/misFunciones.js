@@ -200,7 +200,7 @@ function saveInformacionMessage(){
         dataType: 'JSON',
         data: JSON.stringify(var2),
 
-        url:"http://144.22.56.86/api/Message/save",
+        url:"http://144.22.56.86:8080/api/Message/save",
 
         success:function(response){
             console.log(response);
@@ -218,7 +218,7 @@ function saveInformacionMessage(){
 ///////////////////////////////////
 function traerInformacionReservation(){
     $.ajax({
-        url:"http://144.22.56.86/api/Reservation/all",
+        url:"http://144.22.56.86:8080/api/Reservation/all",
         type: "GET",
         datatype: "JSON",
         success:function(respuesta){
